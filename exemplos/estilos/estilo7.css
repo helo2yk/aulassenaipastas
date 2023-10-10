@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+@keyframes movimenta{
+    from{
+        transform: translateX(0) rotateZ(0deg);
+        background-color: aquamarine;
+   }
+   45%{
+    transform: translate(800px) rotateY(0deg);
+   }
+   55%{
+    transform: translate(800px) rotateZ(360deg);
+   }
+   100%{
+    background-color: gold;
+    transform: translateX(1600px);
+   }
+    to{
+        transform: translateX(500%) rotateZ(720deg);
+        background-color: blueviolet;
+        }
+}
+
+h1{
+    background-color: magenta;
+    color: aliceblue;
+    padding: .5em;
+    text-align: center;
+    box-shadow: 4px 4px 4px;
+    margin-bottom: 12px;
+}
+
+
+
+h1:hover{
+    background-color: black;
+    padding: 2em;
+    transition: 1s; /* Transição depende da interação com o usuario  */
+}
+
+/* Transição é diferente da animação */
+
+div{
+    border: 3px solid plum ;
+    height: 280px;
+    width: 300px;
+
+}
+
+#div1{
+    border: 3px solid black;
+    height: 280px;
+    background-color: red;
+    width: 300px;
+    animation-name: movimenta;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.79,0,0,1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+#div2{
+    animation: movimenta 5s linear 1s infinite alternate ;
+}
+

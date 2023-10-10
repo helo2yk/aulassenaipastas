@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --azulescuro: #27005D;
+    --roxo: #9400FF;
+    --azulclaro: #AED2FF;
+    --azulmaisclaro: #E4F1FF;
+    --clarinho: #FFFFDD;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+h1{
+    background-color: #9400FF;
+    color: var(--clarinho0);
+    padding: 1em;
+    text-align: center;
+    box-shadow:.25e .25em .25em rgba(0, 0, 0),;
+    margin-bottom: 5em;
+}
+/* 
+.container{
+    border: 2px solid var(--azulescuro);
+    background-color: #AED2FF;
+    display: grid;
+    margin-bottom: 10em;
+    grid-template-columns: 1fr 5fr 2fr;
+    gap: 1em;
+    grid-template-rows: 150px 50vh 75px;
+    padding: 2em;
+}
+
+
+.container div{
+    border: 2px solid var(--azulmaisclaro);
+    background-color: #9400FF;
+    padding: 2em;
+} */
+
+
+.container{
+ border: 2px solid var(--azulescuro);
+ background-color: #AED2FF;
+padding: 2em;
+grid-template-areas:  
+'cabecalho cabecalho cabecalho cabecalho'
+'navegacao conteudo conteudo conteudo'
+'rodape rodape rodape rodape';
+display: grid;
+grid-template-columns: 1fr 4fr;
+color: white;
+grid-template-rows: 100px  800px 100px;
+text-align:center;
+}
+
+
+.cabecalho{
+    background-color: #9400FF;
+    padding: 2em;
+    grid-area: cabecalho;
+}
+
+.navegacao{
+    background-color: aqua;
+    padding: 2em;
+    grid-area: navegacao;
+}
+
+.conteudo{
+    background-color: #27005D;
+    padding: 2em;
+    grid-area: conteudo;
+    display: grid;
+    grid-template-areas: 
+    'artigo1 artigo2'
+    'artigo3 artigo3';
+    gap: 1.5em;
+}
+
+.conteudo article{
+    background-color:#9400FF;
+}
+
+.rodape{
+    background-color:var(--roxo);
+    padding: 2em;
+    grid-area: rodape;
+}
+
+
+@media screen and (max-width: 1024px){
+    .container{
+    grid-template-areas: 
+        'cabecalho'
+        'navegacao'
+        'conteudo'
+        'rodape';
+    grid-template-rows: 100px 75px 600px 150px;
+    grid-template-columns: 100%;
+    }
+
+.conteudo{
+    grid-template-areas: 
+    'artigo1'
+    'artigo2'
+    'artigo3'
+    'artigo4';
+} 
+}

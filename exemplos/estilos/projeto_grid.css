@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --verdemusgo: #ECEE81;
+    --azulalgodao: #8DDFCB;
+    --azulescuro: #82A0D8;
+    --roxo: #EDB7ED;
+    --rosa:#FF3FA4;
+    --laranja: #FFBB5C;
+    --padding: 1em;
+}
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+    background-color: var(--azulescuro); 
+    padding: var(--padding); 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 40vh 20vh 20vh 10vh;
+    grid-template-areas: 
+    "header navbar navbar navbar"
+    'sidebar main main main'
+    'sidebar content1 content2 content3'
+    'section1 section1 section2 section2'
+    'footer footer footer footer'
+    ;
+    gap: var(--padding);
+  }
+
+
+.header{
+    background-color: var(--azulalgodao);
+    padding: var(--padding);
+    grid-area: header;
+    background-image: url(../imagem/minimalist-ice-cream-logo-template-in-the-waffle-cone-ice-cream-icon-hand-drawn-style-illustration-for-sticker-and-t-shirt-design-free-vector.jpg);
+    background-position: center;
+    background-size: 50%;
+    
+}
+
+.navbar{
+    background-color: var(--laranja);
+    padding: var(--padding);
+    grid-area:navbar;
+    text-align: center;
+    
+   
+}
+.navbar li{
+    display: inline-block; 
+    padding: 4%;
+}
+
+.navbar ul{
+    list-style: none;
+}   
+
+.navbar a{
+    color: rgba(19, 17, 17);
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.25em;
+    margin-left: 2.5em;
+}
+
+.sidebar{
+    background-color: yellow;
+    padding: var(--padding);
+    grid-area:sidebar;
+}
+
+.main{
+    background-color: #ECEE81;
+    padding: var(--padding);
+    grid-area: main;
+}
+
+.content1{
+    background-color: var(--roxo);
+    padding: var(--padding);
+    grid-area: content1;
+}
+
+.content2{
+  background-color: #FFBB5C;
+  padding: var(--padding);
+  grid-area: content2 ;
+}
+
+.content3{
+background-color: #5cff98;
+padding: var(--padding);
+grid-area: content3;
+}
+
+.section1{
+    background-color:#FF3FA4;
+    padding: var(--padding);
+    grid-area: section1;
+}
+
+.section2{
+    background-color:#FF3FA4;
+    padding: var(--padding);
+    grid-area: section2;
+}
+
+.footer{
+    background-color: #FFBB5C;
+    padding: var(--padding);
+    grid-area: footer;
+}
+
+.sorvetes{
+    line-height: 1;
+    font-size: 18px;
+    color: white;
+    background-image: url(../imagem/sorvetes\ coloridos.jfif);
+    background-position: 45%;
+    padding: 1em 5em;
+}
+
+.coberturas {
+    line-height: 1;
+    font-size: 18px;
+    color: #2B3467
+}
+

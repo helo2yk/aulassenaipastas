@@ -1,0 +1,9 @@
+<h1>Escola Senai ''Ricardo Lerner''</h1>
+<h2>Rua Direita,955 - Vila Santo Antonio- Cotia/SP - 06708-280,</h2>
+<h3>Telefone: (11) 4628-1600 |E-mail:atendimento138@sp.senai.br</h3>
+
+<img src="../minhas_imagenss/bitmap/img_jpg/logo_senai.jpg">
+<img src="../minhas_imagenss/vetor/img_svg/html5.svg">
+
+
+

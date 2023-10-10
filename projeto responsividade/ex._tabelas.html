@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/ex_tabelas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,400;10..48,500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Nunito:ital,wght@0,200;0,500;1,300;1,700&family=Open+Sans:ital,wght@0,400;1,400;1,500&family=Poppins&display=swap" rel="stylesheet">
+    <title>Exemplo 4-Tabelas</title>
+</head>
+<body>
+    <h1>Exemplo 4-Tabelas</h1>
+    
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>Horário </th>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+        <td>07:30</td>
+        <td>UX-UI</td>
+        <td rowspan="2">JavaScript</td>
+        <td>Node Js</td>
+        <td>UI-UX</td>
+        <td rowspan="2">Bootstrap</td>
+       </tr>
+
+       <tr>
+        <td>08:30</td>
+        <td>HTML 5</td>
+        <td>UX-UI</td>
+        <td>HTML5</td>
+       </tr>
+
+       <tr id="intervalo">
+    <td>09:30</td>
+    <td colspan="5">Intervalo</td>
+    </tr>
+
+    <tr>
+        <td>09:45</td>
+        <td>HTML5</td>
+        <td>HTML5</td>
+        <td rowspan="2">CSS</td>
+        <td>Node Js</td>
+        <td>HTML5</td>
+    </tr>
+
+    <tr>
+        <td>10:45</td>
+        <td>CSS</td>
+        <td>React</td>
+        <td>React</td>
+        <td>CSS</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+    <td colspan="6">Horário Escola Front-End</td>
+    </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

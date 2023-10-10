@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 2 box sizing</Box-sizing></title>
+    <style>
+        .tamanho{
+            width: 500px;
+            height: 300px;
+            border: 2px solid coral;
+            margin-bottom: 60px;
+            padding: 100px;
+        }
+        .com_borderBox{
+            box-sizing: border-box;
+            background-color: blueviolet
+        }
+
+        .sem_borderBox{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="sem_borderBox tamanho">
+            <p>Largura 500px Altura 300px - padding 100px</p>
+            <p> sem border-box</p>
+    </div>
+   <div class="com_borderBox tamanho ">
+    <p> Largura 500px Altura 300px </p>
+        <p> com border-box </p>
+        <p>Largura Final: 700px, Altura Final 500px</p>
+    </div>
+   
+
+</body>
+</html>
